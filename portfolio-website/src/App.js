@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import NavBar from './components/NavBar';
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <div>
-      <div></div>
+      <NavBar />
       <StockChart scrollPosition={scrollPosition} currentSection={currentSection} />
       <div className='main-container'>
         <Intro />
