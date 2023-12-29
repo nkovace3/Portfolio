@@ -1,26 +1,11 @@
+import React, { useEffect, useRef } from 'react';
 import '../App.css';
 
 function AboutMe() {
+  const aboutMeRef = useRef(null);
   return (
-    <div className = 'about-me'>
-        <h1>AboutMe</h1>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
+    <div className = 'about-me section' id='about-me' ref={aboutMeRef}>
+      <h1 style={{ marginBottom: '100vh' }}>About "NIK"</h1>
     </div>
   );
 }

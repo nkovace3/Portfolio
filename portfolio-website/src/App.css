@@ -66,9 +66,21 @@
 }
 
 .grey {
-  color: grey;
+  color: #808080;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.custom-height{
+  height: calc(100vh - 320px);
+}
+
+#icon {
+  text-align: center;
+}
+
+.intro.section .badge.bg-danger {
+  background-color: #808080 !important;
 }

@@ -1,26 +1,10 @@
+import React, { useEffect, useRef } from 'react';
 import '../App.css';
-
 function Resume() {
+  const resumeRef = useRef(null);
   return (
-    <div className = 'resume'>
-        <h1>Resume</h1>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
+    <div className = 'resume section' id='resume' ref={resumeRef}>
+      <h1 style={{ marginBottom: '100vh' }}>Resume</h1>
     </div>  );
 }
 
