@@ -1,6 +1,6 @@
 .main-container {
-  margin-top: 320px;
- height: calc(100vh - 320px);
+  margin-top: 38vh;
+ height: 62vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 .projects,
 .contact {
   scroll-snap-align: start;
-  height: calc(100vh - 320px);
+  height: 62vh;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 .custom-height{
-  height: calc(100vh - 320px);
+  height: 62vh;
 }
 
 #icon {
@@ -39,25 +39,12 @@ body {
   align-items: center;
 }
 
-.strong-text {
-  margin-right: 10px; /* Adjust the margin as needed */
-  font-weight: bold;
-}
-
-/* .nav-bar {
-  position: fixed;
-  top: 270px; 
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-} */
-
 .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 270px; /* Adjust as needed based on your design */
+  top: 32vh;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -80,5 +67,5 @@ body {
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #000; /* Add an underline to the active tab */
+  border-bottom: 1vh solid #000; /* Add an underline to the active tab */
 }
