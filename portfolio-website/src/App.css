@@ -84,3 +84,15 @@ body {
 .intro.section .badge.bg-danger {
   background-color: #808080 !important;
 }
+
+.list-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strong-text {
+  margin-right: 10px; /* Adjust the margin as needed */
+  font-weight: bold;
+}
+

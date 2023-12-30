@@ -47,6 +47,10 @@ const StockChart = ({ currentSection }) => {
               display: false,
               text: 'Year',
             },
+            ticks: {
+              maxRotation: 0, // Set the max rotation to 0 degrees
+              minRotation: 0, // Set the min rotation to 0 degrees
+            },
           },
           y: {
             display: false, 
