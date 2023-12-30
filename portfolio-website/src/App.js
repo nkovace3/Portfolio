@@ -35,8 +35,13 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <StockChart scrollPosition={scrollPosition} currentSection={currentSection} />
+      {currentSection !== undefined && ( // Conditional rendering
+        <div className="nav-bar">
+          <NavBar currentSection={currentSection} setCurrentSection={setCurrentSection}/>
+        </div>
+      )}
       <div className='main-container' id='main-container'>
         <Intro />
         <AboutMe />
