@@ -281,7 +281,7 @@ function NavBar({ currentSection }) {
   };
 
   return (
-    <Nav className="nav" variant="underline" defaultActiveKey="/home">
+    <Nav className="nav" variant="underline">
       <Nav.Item>
         <Nav.Link
           onClick={(event) => handleClick('intro', event)}
@@ -303,7 +303,7 @@ function NavBar({ currentSection }) {
           onClick={(event) => handleClick('resume', event)}
           className={currentSection === 2 ? 'active' : ''}
         >
-          Highlights
+          Past
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
