@@ -27,7 +27,7 @@ function Resume() {
               <img src={Algo} alt="Algo Logo" style={{ width: '2.5vh', marginLeft: '1vh' }} />
             </td>
             <td style={{ width: 'auto', textAlign: 'left' }}>Head of Quant Analysis</td>
-            <td style={{ width: 'auto', textAlign: 'left' }}>Sept. 2023 - Current</td>
+            <td style={{ width: 'auto', textAlign: 'left' }}>Sept. 2023 - Present</td>
             <td style={{ width: 'auto', whiteSpace: 'normal' }}>
               <ul>
                 <li>
