@@ -74,3 +74,25 @@ body {
 .nav-link.active {
   border-bottom: 1vh solid #000;
 }
+
+.projects .table th,
+.projects .table td {
+  width: auto;
+  font-size: 1vw;
+}
+
+.projects .table th,
+.projects .table td {
+  width: auto;
+  font-size: 1vw;
+}
+
+.resume .table th,
+.resume .table td {
+  width: auto;
+  font-size: 1vw;
+}
+
+.about-me .container {
+  font-size: 1vw;
+}

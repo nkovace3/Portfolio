@@ -27,7 +27,7 @@ function NavBar({ currentSection }) {
   };
 
   return (
-    <Nav className="nav" variant="underline">
+    <Nav className="nav" variant="underline" style = {{fontSize: '1vw'}}>
       <Nav.Item>
         <Nav.Link
           onClick={(event) => handleClick('intro', event)}

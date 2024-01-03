@@ -139,12 +139,12 @@ const StockChart = ({ currentSection }) => {
   return (
     <div className='chart-container'>
       <div className='chart-wrapper'>
-        <h2 className='header'>Nikola Kovacevic, Inc. (NIK)</h2>
+        <h2 className='header' style = {{fontSize: '2.5vw'}}>Nikola Kovacevic, Inc. (NIK)</h2>
         <div className='price-trend-container'>
           {/* eslint-disable-next-line */}
-          <h1 className='price'></h1>
+          <h1 className='price' style = {{fontSize: '2.5vw'}}></h1>
           {/* eslint-disable-next-line */}
-          <h2 className='trend'></h2>
+          <h2 className='trend' style = {{fontSize: '2.5vw'}}></h2>
         </div>
       </div>
       <canvas ref={chartRef} className='chart' />

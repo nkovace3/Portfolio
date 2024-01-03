@@ -45,7 +45,6 @@ function Intro() {
           setTrend(newTrend);
         }
 
-        console.log(prevPrice, newPrice);
         return newPrice;
       });
     }, 1000);
@@ -77,10 +76,10 @@ function Intro() {
 
   return (
     <div className='intro section' id='intro' ref={introRef}>
-      <h1 style={{ marginBottom: '5vh', marginTop: '15vh', textAlign: 'center' }}>Welcome to Nikola Kovacevic, Inc. (NIK)</h1>
+      <h1 style={{ marginBottom: '5vh', marginTop: '15vh', textAlign: 'center', fontSize: '3vw' }}>Welcome to Nikola Kovacevic, Inc. (NIK)</h1>
       <div className="price-trend-container" style={{ display: 'flex', justifyContent: 'center', marginLeft: '1em' }}>
-        <h1 className='intro-price' style={{ marginRight: '0.5em', textAlign: 'left' }}>{price}</h1>
-        <h1 className='intro-trend' style={{ textAlign: 'left', marginBottom: '10vh' }}>{trend}</h1>
+        <h1 className='intro-price' style={{ marginRight: '0.5em', textAlign: 'left', fontSize: '3vw' }}>{price}</h1>
+        <h1 className='intro-trend' style={{ textAlign: 'left', marginBottom: '10vh', fontSize: '3vw' }}>{trend}</h1>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       <KeyboardDoubleArrowDownIcon style={{ fontSize: '4em', marginBottom: '100vh' }} />

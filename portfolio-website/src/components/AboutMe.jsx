@@ -9,7 +9,7 @@ function AboutMe() {
 
   return (
     <div className='about-me section' id='about-me' ref={aboutMeRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh' }}>About "NIK"</h1>
+      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh', fontSize: '2.5vw' }}>About "NIK"</h1>
       <Container className="d-flex justify-content-center" style = {{marginBottom: '100vh'}}>
         <div className="d-flex justify-content-between" style={{ maxWidth: '200vh', width: '100%' }}>
           <ListGroup variant="flush">
@@ -72,11 +72,6 @@ function AboutMe() {
             <p><strong>Diversified Interests Portfolio</strong></p>
             <ListGroup.Item>
               <div className="list-item-content">
-                <span className="left-text">Electronic Music & DJing</span>
-              </div>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <div className="list-item-content">
                 <span className="left-text">NBA Analytics</span>
               </div>
             </ListGroup.Item>
@@ -92,13 +87,18 @@ function AboutMe() {
             </ListGroup.Item>
             <ListGroup.Item>
               <div className="list-item-content">
+                <span className="left-text">Electronic Music & DJing</span>
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <div className="list-item-content">
                 <span className="left-text">Live Concerts</span>
               </div>
             </ListGroup.Item>
           </ListGroup>
           <div style={{ marginLeft: '5vh', display: 'inline-block' }}>
             <p style={{ marginBottom: '2.5vh', display: 'block', maxWidth: '100%' }}><strong>Market Profile</strong></p>
-            <div style={{ display: 'inline-block', width: '25vh' }}>
+            <div style={{ display: 'inline-block', width: '12vw' }}>
               <img src={Me} className="w-100" alt="Me" style={{width: '2vh'}} />
             </div>
           </div>

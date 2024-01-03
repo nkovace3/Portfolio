@@ -11,8 +11,8 @@ function Projects() {
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh' }}>Tech Portfolio</h1>
-      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%', marginBottom: '100vh' }}>
+      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
+      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%', marginBottom: '200vh' }}>
         <thead style={{ borderBottom: 'none' }}>
           <tr>
             <th style={{ width: 'auto' }}>Project Name</th>
@@ -65,7 +65,7 @@ function Projects() {
               Medium-sized role-player-game that takes place in the wild west. Includes three unique playable characters, player health, NPC behaviour, and player combat across three levels.
             </td>
           </tr>
-          <tr style = {{marginBottom: '100vh'}}>
+          <tr >
             <td style={{ width: 'auto', borderBottom: 'none' }}>
               <a href="https://github.com/nkovace3/GoGrocery" target="_blank" rel="noopener noreferrer">
               GoGrocery
