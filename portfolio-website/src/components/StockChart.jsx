@@ -20,9 +20,9 @@ const StockChart = ({ currentSection }) => {
   );
 
   // eslint-disable-next-line
-  const prices = [101.62, 198.67, 201.35, 267.09, 273.98];
+  const prices = [101.62, 198.67, 201.35, 267.09, 273.98, 273.98, 273.98];
   // eslint-disable-next-line
-  const trends = [' ', '+97.05 (+95.50%)', '+2.68 (+1.35%)', '+65.74 (+32.65%)', '+6.89 (+2.58%)'];
+  const trends = [' ', '+97.05 (+95.50%)', '+2.68 (+1.35%)', '+65.74 (+32.65%)', '+6.89 (+2.58%)', '+6.89 (+2.58%)', '+6.89 (+2.58%)'];
 
   useEffect(() => {
     const ctx = chartRef.current.getContext('2d');
@@ -124,7 +124,7 @@ const StockChart = ({ currentSection }) => {
     const priceInterval = setInterval(() => {
       if (priceElement && trendElement) {
           const randPrice = (Math.random() * (1.5 - (-1.5)) + (-1.5) + prices[currentSection]).toFixed(2);
-          const randTrend = `+${(randPrice - prices[currentSection - 1]).toFixed(2)} (+${(((randPrice / prices[currentSection - 1]) - 1) * 100).toFixed(2)}%)`
+          const randTrend = `+${Math.abs(randPrice - prices[currentSection - 1]).toFixed(2)} (+${Math.abs(((randPrice / prices[currentSection - 1]) - 1) * 100).toFixed(2)}%)`
 
           priceElement.textContent = randPrice.toString();
           trendElement.textContent = randTrend;

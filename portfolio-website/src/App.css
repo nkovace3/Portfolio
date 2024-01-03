@@ -25,6 +25,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.nav {
+  font-family: 'Roboto', sans-serif;
+}
+
 .custom-height{
   height: 62vh;
 }
@@ -90,7 +94,7 @@ body {
 .resume .table th,
 .resume .table td {
   width: auto;
-  font-size: .9vw;
+  font-size: .8vw;
 }
 
 .about-me .container {
