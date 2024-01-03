@@ -11,7 +11,7 @@ function Projects() {
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '6vh' }}>Tech Portfolio</h1>
+      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh' }}>Tech Portfolio</h1>
       <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%', marginBottom: '100vh' }}>
         <thead style={{ borderBottom: 'none' }}>
           <tr>
