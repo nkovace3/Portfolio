@@ -11,8 +11,9 @@ function Projects() {
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
-      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%', marginBottom: '200vh' }}>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
+      <div style = {{display: 'flex', justifyContent: 'center'}}>
+      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '80%', marginBottom: '200vh' }}>
         <thead style={{ borderBottom: 'none' }}>
           <tr>
             <th style={{ width: 'auto' }}>Project Name</th>
@@ -81,6 +82,7 @@ function Projects() {
           </tr>
         </tbody>
       </Table>
+      </div>
     </div>
   );
 }

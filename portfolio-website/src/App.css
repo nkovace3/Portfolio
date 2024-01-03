@@ -90,7 +90,7 @@ body {
 .resume .table th,
 .resume .table td {
   width: auto;
-  font-size: 1vw;
+  font-size: .9vw;
 }
 
 .about-me .container {

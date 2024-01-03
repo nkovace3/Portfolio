@@ -1,8 +1,10 @@
 .chart-container {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    /* left: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
     height: 25%;
     z-index: 1000;
     justify-content: center;
@@ -14,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    
   }
 
 .chart-wrapper {

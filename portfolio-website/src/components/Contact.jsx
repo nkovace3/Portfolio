@@ -98,7 +98,7 @@ function Contact() {
 
   return (
     <div className="contact section" id="contact" ref={contactRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Investor Relations</h1>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Investor Relations</h1>
       <p style={{ textAlign: 'center', marginBottom: '5vh', fontSize: '1vw' }}>Let's get in touch about adding "NIK" to your portfolio, today!</p>
       <Form ref={form} onSubmit={sendEmail} style={{fontSize: '1vw'}} >
         <div className="mb-3 d-flex justify-content-between" style={{ marginLeft: '40vh', marginRight: '40vh' }}>
@@ -134,7 +134,7 @@ function Contact() {
         </a>
       </div>
       <div className="d-flex justify-content-center">
-        <p style = {{marginBottom: '100vh', fontSize: '1vw'}}>© Developed by Nikola Kovacevic, 2024 | nkovacevic.hba2025@ivey.ca | 519-719-9119</p>
+        <p style = {{marginBottom: '10vh', fontSize: '1vw'}}>© Developed by Nikola Kovacevic, 2024 | nkovacevic.hba2025@ivey.ca | 519-719-9119</p>
       </div>
     </div>
   );

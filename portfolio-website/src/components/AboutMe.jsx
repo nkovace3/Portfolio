@@ -9,7 +9,7 @@ function AboutMe() {
 
   return (
     <div className='about-me section' id='about-me' ref={aboutMeRef}>
-      <h1 style={{ marginLeft: '2vh', marginBottom: '10vh', fontSize: '2.5vw' }}>About "NIK"</h1>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '10vh', fontSize: '2.5vw' }}>About "NIK"</h1>
       <Container className="d-flex justify-content-center" style = {{marginBottom: '100vh'}}>
         <div className="d-flex justify-content-between" style={{ maxWidth: '200vh', width: '100%' }}>
           <ListGroup variant="flush">
