@@ -66,7 +66,7 @@ function Projects() {
               Medium-sized role-player-game that takes place in the wild west. Includes three unique playable characters, player health, NPC behaviour, and player combat across three levels.
             </td>
           </tr>
-          <tr>
+          <tr style = {{marginBottom: '100vh'}}>
             <td style={{ width: 'auto', borderBottom: 'none' }}>
               <a href="https://github.com/nkovace3/GoGrocery" target="_blank" rel="noopener noreferrer">
               GoGrocery

@@ -1,4 +1,196 @@
-import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef } from 'react';
+// import { Chart } from 'chart.js/auto';
+// import '../css/StockChart.css';
+
+// const StockChart = ({ currentSection }) => {
+//   const chartRef = useRef(null);
+//   const chartInstanceRef = useRef(null);
+
+//   const stockData = [
+//     100, 120, 140, 110, 130, 150, 120, 140, 160, 180,
+//     200, 170, 190, 210, 180, 200, 220, 190, 210, 230,
+//     200, 220, 240, 210, 230, 250, 220, 240, 260, 250,
+//     270, 240, 260, 280, 250, 270, 290, 260, 280, 300,
+//     270, 290, 310, 280, 300, 320, 310, 330, 340, 350
+//   ];
+
+//   const labels = Array.from({ length: stockData.length }, (_, i) =>
+//     (i % 10 === 0 && i / 10 < 6) ? (2020 + Math.floor(i / 10)).toString() : ''
+//   );
+
+//   //101.62
+//   const prices = [101.62, 198.67, 201.35, 267.09, 273.98];
+//   const trends = [' ', '+97.05 (+95.50%)', '+2.68 (+1.35%)', '+65.74 (+32.65%)', '+6.89 (+2.58%)']
+
+//   useEffect(() => {
+//     const ctx = chartRef.current.getContext('2d');
+
+//     // Create the initial chart with fixed y-axis range
+//     const chartInstance = new Chart(ctx, {
+//       type: 'line',
+//       data: {
+//         labels: labels,
+//         datasets: [
+//           {
+//             label: 'Stock Chart',
+//             data: stockData,
+//             borderColor: '#0d6efd',
+//             fill: false,
+//           },
+//         ],
+//       },
+//       options: {
+//         responsive: true,
+//         maintainAspectRatio: false,
+//         aspectRatio: 1, 
+//         scales: {
+//           x: {
+//             title: {
+//               display: false,
+//               text: 'Year',
+//             },
+//             ticks: {
+//               color: 'white',
+//               maxRotation: 0, // Set the max rotation to 0 degrees
+//               minRotation: 0, // Set the min rotation to 0 degrees
+//             },
+//           },
+//           y: {
+//             display: false, 
+//             ticks: {
+//               stepSize: 10,
+//             },
+//             min: 90,  
+//             max: 360,  
+//           },
+//         },
+//         plugins: {
+//           legend: {
+//             display: false, 
+//           },
+//           tooltip: {
+//             enabled: false, 
+//           },
+//         },
+//         animation: {
+//           duration: 0, 
+//         },
+//       },
+//     });
+
+//     // Save the Chart instance to a ref for later destruction
+//     chartInstanceRef.current = chartInstance;
+
+//     // Clean up the chart on component unmount
+//     return () => {
+//       if (chartInstanceRef.current) {
+//         chartInstanceRef.current.destroy();
+//       }
+//     };
+//   }, []); // No dependencies, create the chart only once
+
+//   useEffect(() => {
+//     // Assuming each section displays 10 data points
+//     const dataPointsToShow = (currentSection + 1) * 10;
+
+//     if (chartInstanceRef.current) {
+//       const chartData = chartInstanceRef.current.data.datasets[0].data;
+
+//       // Update the existing Chart instance in place
+//       for (let i = 0; i < stockData.length; i++) {
+//         chartData[i] = i < dataPointsToShow ? stockData[i] : null;
+//       }
+
+//       chartInstanceRef.current.update();
+//     }
+//   }, [currentSection, stockData]);
+
+//   // useEffect(() => {
+//   //   // Update the price based on the current section
+//   //   const priceElement = document.querySelector('.price');
+//   //   const trendElement = document.querySelector('.trend');
+//   //   if (priceElement&&trendElement) {
+//   //     priceElement.textContent = `${prices[currentSection]}`;
+//   //     trendElement.textContent = `${trends[currentSection]}`;
+//   //     if (currentSection === 0) {
+//   //       trendElement.classList.remove('green');
+//   //       trendElement.classList.add('grey');
+//   //     } else {
+//   //       trendElement.classList.remove('grey');
+//   //       trendElement.classList.add('green');
+//   //     }
+//   //   }
+//   // }, [currentSection, prices, trends]);
+//   useEffect(() => {
+//     const priceInterval = setInterval(() => {
+//       const priceElement = document.querySelector('.price');
+//       const trendElement = document.querySelector('.trend');
+//       if (priceElement&&trendElement) {
+//         if(currentSection === 0) {
+//           priceElement.textContent = `${prices[currentSection]}`;
+//           trendElement.textContent = `${trends[currentSection]}`;
+//         }else{
+//           const randPrice = (Math.random() * (((prices[currentSection] + 1.5) - (prices[currentSection] - 1.5)) +  (prices[currentSection] - 1.5))).toFixed(2);
+//           const randTrend = '+' + (randPrice - prices[currentSection - 1]).toFixed(2).toString() + ' (+' + (((randPrice / prices[currentSection - 1]) - 1) * 100).toFixed(2).toString() + '%)';
+//           priceElement.textContent = randPrice.toString();
+//           trendElement.textContent = randTrend
+//         }
+//         // const newPrice = (Math.random() * (103.00 - 100.00) + 100.00).toFixed(2);
+
+//         // if (newPrice >= prevPrice) {
+//         //   const newTrend = '+' + (newPrice - prevPrice).toFixed(2).toString() + ' (+' + (((newPrice / prevPrice) - 1) * 100).toFixed(2).toString() + '%)';
+//         //   trendElement.classList.add('green');
+//         //   trendElement.classList.remove('red');
+//         //   trendElement.classList.remove('grey');
+//         //   setTrend(newTrend);
+//         // } else {
+//         //   const newTrend = '-' + Math.abs((newPrice - prevPrice)).toFixed(2).toString() + ' (-' + Math.abs(((newPrice / prevPrice) - 1) * 100).toFixed(2).toString() + '%)';
+//         //   trendElement.classList.add('red');
+//         //   trendElement.classList.remove('green');
+//         //   trendElement.classList.remove('grey');
+//         //   setTrend(newTrend);
+//         // }
+
+//         // console.log(prevPrice, newPrice);
+//         // return newPrice;
+//       }
+
+//     }, 1000);
+//     return () => {
+//       clearInterval(priceInterval);
+//     };
+//   }, [currentSection, prices, trends]);
+    
+      
+//     //   if (priceElement&&trendElement) {
+//     //     priceElement.textContent = `${prices[currentSection]}`;
+//     //     trendElement.textContent = `${trends[currentSection]}`;
+//     //     if (currentSection === 0) {
+//     //       trendElement.classList.remove('green');
+//     //       trendElement.classList.add('grey');
+//     //     } else {
+//     //       trendElement.classList.remove('grey');
+//     //       trendElement.classList.add('green');
+//     //     }
+//     //   }
+//     // }, [currentSection, prices, trends]);
+
+//   return (
+//     <div className = 'chart-container'>
+//     <div className='chart-wrapper'>
+//       <h2 className='header'>Nikola Kovacevic, Inc. (NIK)</h2>
+//       <div className='price-trend-container'>
+//         <h1 className='price'></h1>
+//         <h2 className='trend'></h2>
+//       </div>
+//     </div>
+//     <canvas ref={chartRef} className='chart' />
+//     </div>
+//   );
+// };
+
+// export default StockChart;
+import React, { useEffect, useRef, useState } from 'react';
 import { Chart } from 'chart.js/auto';
 import '../css/StockChart.css';
 
@@ -19,7 +211,7 @@ const StockChart = ({ currentSection }) => {
   );
 
   const prices = [101.62, 198.67, 201.35, 267.09, 273.98];
-  const trends = ['+0.00 (+0.00%)', '+97.05 (+95.50%)', '+2.68 (+1.35%)', '+65.74 (+32.65%)', '+6.89 (+2.58%)']
+  const trends = [' ', '+97.05 (+95.50%)', '+2.68 (+1.35%)', '+65.74 (+32.65%)', '+6.89 (+2.58%)'];
 
   useEffect(() => {
     const ctx = chartRef.current.getContext('2d');
@@ -41,7 +233,7 @@ const StockChart = ({ currentSection }) => {
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        aspectRatio: 1, 
+        aspectRatio: 1,
         scales: {
           x: {
             title: {
@@ -55,24 +247,24 @@ const StockChart = ({ currentSection }) => {
             },
           },
           y: {
-            display: false, 
+            display: false,
             ticks: {
               stepSize: 10,
             },
-            min: 90,  
-            max: 360,  
+            min: 90,
+            max: 360,
           },
         },
         plugins: {
           legend: {
-            display: false, 
+            display: false,
           },
           tooltip: {
-            enabled: false, 
+            enabled: false,
           },
         },
         animation: {
-          duration: 0, 
+          duration: 0,
         },
       },
     });
@@ -105,32 +297,43 @@ const StockChart = ({ currentSection }) => {
   }, [currentSection, stockData]);
 
   useEffect(() => {
-    // Update the price based on the current section
     const priceElement = document.querySelector('.price');
     const trendElement = document.querySelector('.trend');
-    if (priceElement&&trendElement) {
+    if (currentSection === 0) {
+      priceElement.textContent = ` `;
+      trendElement.textContent = `${trends[currentSection]}`;
+      return;
+    }
+    else{
       priceElement.textContent = `${prices[currentSection]}`;
       trendElement.textContent = `${trends[currentSection]}`;
-      if (currentSection === 0) {
-        trendElement.classList.remove('green');
-        trendElement.classList.add('grey');
-      } else {
-        trendElement.classList.remove('grey');
-        trendElement.classList.add('green');
-      }
+      trendElement.classList.add('green');
     }
+    const priceInterval = setInterval(() => {
+      if (priceElement && trendElement) {
+          const randPrice = (Math.random() * (1.5 - (-1.5)) + (-1.5) + prices[currentSection]).toFixed(2);
+          const randTrend = `+${(randPrice - prices[currentSection - 1]).toFixed(2)} (+${(((randPrice / prices[currentSection - 1]) - 1) * 100).toFixed(2)}%)`
+
+          priceElement.textContent = randPrice.toString();
+          trendElement.textContent = randTrend;
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(priceInterval);
+    };
   }, [currentSection, prices, trends]);
 
   return (
-    <div className = 'chart-container'>
-    <div className='chart-wrapper'>
-      <h2 className='header'>Nikola Kovacevic, Inc. (NIK)</h2>
-      <div className='price-trend-container'>
-        <h1 className='price'></h1>
-        <h2 className='trend'></h2>
+    <div className='chart-container'>
+      <div className='chart-wrapper'>
+        <h2 className='header'>Nikola Kovacevic, Inc. (NIK)</h2>
+        <div className='price-trend-container'>
+          <h1 className='price'></h1>
+          <h2 className='trend'></h2>
+        </div>
       </div>
-    </div>
-    <canvas ref={chartRef} className='chart' />
+      <canvas ref={chartRef} className='chart' />
     </div>
   );
 };

@@ -98,8 +98,8 @@ function AboutMe() {
           </ListGroup>
           <div style={{ marginLeft: '5vh', display: 'inline-block' }}>
             <p style={{ marginBottom: '2.5vh', display: 'block', maxWidth: '100%' }}><strong>Market Profile</strong></p>
-            <div style={{ display: 'inline-block', maxWidth: '25vh' }}>
-              <img src={Me} className="w-100" alt="Me" />
+            <div style={{ display: 'inline-block', width: '25vh' }}>
+              <img src={Me} className="w-100" alt="Me" style={{width: '2vh'}} />
             </div>
           </div>
         </div>

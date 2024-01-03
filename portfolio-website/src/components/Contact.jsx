@@ -147,7 +147,7 @@ function Contact() {
         </a>
       </div>
       <div className="d-flex justify-content-center">
-        <p>© Developed by <strong>Nikola Kovacevic</strong>, 2024</p>
+        <p>© Developed by Nikola Kovacevic, 2024 | nkovacevic.hba2025@ivey.ca | 519-719-9119</p>
       </div>
     </div>
   );

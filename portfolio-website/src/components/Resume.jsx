@@ -11,7 +11,7 @@ function Resume() {
   return (
     <div className='resume section' id='resume' ref={resumeRef} style={{ maxWidth: '100%' }}>
       <h1 style={{ marginLeft: '2vh' }}>Past Performance</h1>
-      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%' }}>
+      <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '100%', marginBottom: '100vh' }}>
         <thead style={{ borderBottom: 'none' }}>
           <tr>
             <th style={{ width: 'auto' }}>Company Name</th>
