@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Table from 'react-bootstrap/Table';
-import Alert from 'react-bootstrap/Alert';
 import '../App.css';
 import SuperMan from '../images/Superman.png';
 import GoGrocery from '../images/GoGrocery.png';

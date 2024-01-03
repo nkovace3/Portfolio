@@ -56,24 +56,24 @@ function Intro() {
     };
   }, []);
 
-  const scrollToAboutMe = () => {
-    const aboutMeSection = document.getElementById('about-me');
-    const mainContainer = document.getElementById('main-container');
+  // const scrollToAboutMe = () => {
+  //   const aboutMeSection = document.getElementById('about-me');
+  //   const mainContainer = document.getElementById('main-container');
 
-    if (aboutMeSection && mainContainer) {
-      const sectionOffsetTop = aboutMeSection.offsetTop;
-      const mainContainerOffsetTop = mainContainer.offsetTop;
+  //   if (aboutMeSection && mainContainer) {
+  //     const sectionOffsetTop = aboutMeSection.offsetTop;
+  //     const mainContainerOffsetTop = mainContainer.offsetTop;
 
-      const offsetRelativeToMainContainer = sectionOffsetTop - mainContainerOffsetTop;
+  //     const offsetRelativeToMainContainer = sectionOffsetTop - mainContainerOffsetTop;
 
-      requestAnimationFrame(() => {
-        mainContainer.scrollTo({
-          top: offsetRelativeToMainContainer,
-          behavior: 'smooth',
-        });
-      });
-    }
-  };
+  //     requestAnimationFrame(() => {
+  //       mainContainer.scrollTo({
+  //         top: offsetRelativeToMainContainer,
+  //         behavior: 'smooth',
+  //       });
+  //     });
+  //   }
+  // };
 
   return (
     <div className='intro section' id='intro' ref={introRef}>
