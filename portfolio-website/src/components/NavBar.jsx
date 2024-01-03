@@ -1,9 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
-import React, { useRef } from 'react';
+import React from 'react';
 import '../App.css';
 
 function NavBar({ currentSection }) {
-  const mainContainerRef = useRef(null);
+  //const mainContainerRef = useRef(null);
 
   const scrollToSection = (sectionClassName) => {
     const mainContainer = document.querySelector('.main-container');
