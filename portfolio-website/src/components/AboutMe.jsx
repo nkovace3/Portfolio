@@ -11,7 +11,7 @@ function AboutMe() {
     <div className='about-me section' id='about-me' ref={aboutMeRef}>
       <h1 style={{ marginLeft: '12vh', marginBottom: '10vh', fontSize: '2.5vw' }}>About "NIK"</h1>
       <Container className="d-flex justify-content-center" style = {{marginBottom: '100vh'}}>
-        <div className="d-flex justify-content-between" style={{ maxWidth: '200vh', width: '90%' }}>
+        <div className="d-flex justify-content-between" style={{ width: '90%' }}>
           <ListGroup variant="flush">
             <p><strong>History</strong></p>
             <ListGroup.Item>
