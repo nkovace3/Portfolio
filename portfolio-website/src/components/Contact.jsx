@@ -34,7 +34,7 @@ function Contact() {
       <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Investor Relations</h1>
       <p style={{ textAlign: 'center', marginBottom: '5vh', fontSize: '1vw' }}>Let's get in touch about adding "NIK" to your portfolio, today!</p>
       <Form ref={form} onSubmit={sendEmail} style={{fontSize: '1vw'}} >
-        <div className="mb-3 d-flex justify-content-between" style={{ marginLeft: '40vh', marginRight: '40vh' }}>
+        <div className="mb-3 d-flex justify-content-between" style={{ marginLeft: '22.5vw', marginRight: '22.5vw' }}>
           <Form.Group className="mr-3" style={{ width: '40vh' }}>
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" name="user_name" style = {{height: '5vh'}}/>
