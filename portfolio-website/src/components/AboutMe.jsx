@@ -10,8 +10,8 @@ function AboutMe() {
   return (
     <div className='about-me section' id='about-me' ref={aboutMeRef}>
       <h1 style={{ marginLeft: '12vh', marginBottom: '10vh', fontSize: '2.5vw' }}>About "NIK"</h1>
-      <Container className="d-flex justify-content-center" style = {{marginBottom: '100vh'}}>
-        <div className="d-flex justify-content-between" style={{ width: '90%' }}>
+      <Container className="d-flex justify-content-center" style={{ marginBottom: '100vh' }}>
+        <div style={{ display: 'flex', maxWidth: '90%', gap: '3vh' }}>
           <ListGroup variant="flush">
             <p><strong>History</strong></p>
             <ListGroup.Item>
@@ -40,6 +40,7 @@ function AboutMe() {
               </div>
             </ListGroup.Item>
           </ListGroup>
+
           <ListGroup variant="flush">
             <p><strong>Coursework Portfolio</strong></p>
             <ListGroup.Item>
@@ -68,8 +69,9 @@ function AboutMe() {
               </div>
             </ListGroup.Item>
           </ListGroup>
+
           <ListGroup variant="flush">
-            <p><strong>Diversified Interests Portfolio</strong></p>
+            <p><strong>Interests Portfolio</strong></p>
             <ListGroup.Item>
               <div className="list-item-content">
                 <span className="left-text">NBA Analytics</span>
@@ -96,12 +98,15 @@ function AboutMe() {
               </div>
             </ListGroup.Item>
           </ListGroup>
-          <div style={{ marginLeft: '5vh', display: 'inline-block' }}>
-            <p style={{ marginBottom: '2.5vh', display: 'block', maxWidth: '100%' }}><strong>Market Profile</strong></p>
-            <div style={{ display: 'inline-block', width: '12vw' }}>
-              <img src={Me} className="w-100" alt="Me" style={{width: '2vh'}} />
-            </div>
-          </div>
+
+          <ListGroup variant="flush">
+            <p><strong>Market Profile</strong></p>
+            <ListGroup.Item>
+              <div className="list-item-content" style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={Me} alt="Me" style={{ width: '20vh', marginRight: '1rem' }} />
+              </div>
+            </ListGroup.Item>
+          </ListGroup>
         </div>
       </Container>
     </div>
