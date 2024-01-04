@@ -77,7 +77,7 @@ function Resume() {
               <ul>
                 <li>
                   Designed solution to promote sustainability among students using Figma; resulted in mobile application concept that
-                  cuts user food waste by 50% per month. 
+                  cuts user food waste by 50% per month and calculates positive environmental impact created. 
                 </li>
                 <li>
                   Presented concept by pitching to RBC executives and Western deans, earning $3,500 stipend for successful execution.

@@ -5,6 +5,7 @@ import SuperMan from '../images/Superman.png';
 import GoGrocery from '../images/GoGrocery.png';
 import Cowboy from '../images/Cowboy.png';
 import ProductRecommendation from '../images/ProductRecommendation.webp';
+import HouseLeague from '../images/HouseLeague.png';
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -42,7 +43,7 @@ function Projects() {
             <td style={{ width: 'auto'}}>
               <a href="https://github.com/nkovace3/AI-Product-Recommendation" target="_blank" rel="noopener noreferrer">
               Product Recommendation System
-              <img src={ProductRecommendation} alt="AI Logo" style={{ width: '3vh', marginLeft: '1vh', borderBottom: 'none' }} />
+              <img src={ProductRecommendation} alt="AI Logo" style={{ width: '2.5vh', marginLeft: '1vh', borderBottom: 'none' }} />
               </a>
             </td>
             <td style={{ width: 'auto', textAlign: 'left'}}>
@@ -67,17 +68,31 @@ function Projects() {
             </td>
           </tr>
           <tr >
-            <td style={{ width: 'auto', borderBottom: 'none' }}>
+            <td style={{ width: 'auto'}}>
               <a href="https://github.com/nkovace3/GoGrocery" target="_blank" rel="noopener noreferrer">
               GoGrocery
               <img src={GoGrocery} alt="GoGrocery Logo" style={{ width: '8vh', marginLeft: '1vh' }} />
               </a>
             </td>
-            <td style={{ width: 'auto', textAlign: 'left', borderBottom: 'none' }}>
+            <td style={{ width: 'auto', textAlign: 'left'}}>
               Python, Flask, OCR API, Spoonacular API
             </td>
-            <td style={{ width: 'auto', whiteSpace: 'normal', borderBottom: 'none' }}>
+            <td style={{ width: 'auto', whiteSpace: 'normal'}}>
               Full-stack app that scans users' grocery receipts with camera and then recommends recipes with the ingredients. Won <strong>3rd Place Prize</strong> at eHacks Hackathon.
+            </td>
+          </tr>
+          <tr >
+            <td style={{ width: 'auto', borderBottom: 'none' }}>
+              <a href="https://github.com/nkovace3/HouseLeagueAI" target="_blank" rel="noopener noreferrer">
+              HouseLeagueAI
+              <img src={HouseLeague} alt="HouseLeague Logo" style={{ width: '2vh', marginLeft: '1vh' }} />
+              </a>
+            </td>
+            <td style={{ width: 'auto', textAlign: 'left', borderBottom: 'none' }}>
+              Python, OpenAI API
+            </td>
+            <td style={{ width: 'auto', whiteSpace: 'normal', borderBottom: 'none' }}>
+              Application that develops AI-generated news article for youth sports games based on the coach's submission of game stats, top performances, storyline, and more.
             </td>
           </tr>
         </tbody>
