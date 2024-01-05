@@ -6,13 +6,14 @@ import GoGrocery from '../images/GoGrocery.png';
 import Cowboy from '../images/Cowboy.png';
 import ProductRecommendation from '../images/ProductRecommendation.webp';
 import HouseLeague from '../images/HouseLeague.png';
+import Movie from '../images/Movie.png';
 
 function Projects() {
   const projectsRef = useRef(null);
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '3vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
       <div style = {{display: 'flex', justifyContent: 'center'}}>
       <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '80%', marginBottom: '200vh' }}>
         <thead style={{ borderBottom: 'none' }}>
@@ -93,6 +94,20 @@ function Projects() {
             </td>
             <td style={{ width: 'auto', whiteSpace: 'normal', borderBottom: 'none' }}>
               Application that develops AI-generated news article for youth sports games based on the coach's submission of game stats, top performances, storyline, and more.
+            </td>
+          </tr>
+          <tr >
+            <td style={{ width: 'auto', borderBottom: 'none' }}>
+              <a href="https://github.com/nkovace3/Movie-Theatre-Database" target="_blank" rel="noopener noreferrer">
+              Movie Theatre Dashboard
+              <img src={Movie} alt="Movie Logo" style={{ width: '1.5vh', marginLeft: '1vh' }} />
+              </a>
+            </td>
+            <td style={{ width: 'auto', textAlign: 'left', borderBottom: 'none' }}>
+              MySQL, Node.js, Express.js, CSS, JavaScript, HTML
+            </td>
+            <td style={{ width: 'auto', whiteSpace: 'normal', borderBottom: 'none' }}>
+              Database with interactive dashboard that features information about theatres, movies, showtimes, tickets purchases, and clients in a region, as well as data visualization for all metrics.
             </td>
           </tr>
         </tbody>
