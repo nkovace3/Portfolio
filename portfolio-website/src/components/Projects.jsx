@@ -13,7 +13,7 @@ function Projects() {
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '12vh', marginBottom: '3vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
       <div style = {{display: 'flex', justifyContent: 'center'}}>
       <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '80%', marginBottom: '200vh' }}>
         <thead style={{ borderBottom: 'none' }}>
@@ -47,8 +47,8 @@ function Projects() {
               <img src={ProductRecommendation} alt="AI Logo" style={{ width: '2.5vh', marginLeft: '1vh', borderBottom: 'none' }} />
               </a>
             </td>
-            <td style={{ width: 'auto', textAlign: 'left'}}>
-              Python, React, Django, TensorFlow, scikit-learn, Electron.js
+            <td style={{ width: 'auto', textAlign: 'left', whiteSpace: 'normal'}}>
+              Python, React, Django, TensorFlow, scikit-learn, Pandas, numpy, Electron.js
             </td>
             <td style={{ width: 'auto', whiteSpace: 'normal' }}>
               AI-based full-stack app that recommends new products for customers to try based on their previous shopping histories.
@@ -107,7 +107,7 @@ function Projects() {
               MySQL, Node.js, Express.js, CSS, JavaScript, HTML
             </td>
             <td style={{ width: 'auto', whiteSpace: 'normal', borderBottom: 'none' }}>
-              Database with interactive dashboard that features information about theatres, movies, showtimes, tickets purchases, and clients in a region, as well as data visualization for all metrics.
+              Database with interactive dashboard that features information about theatres, movies, showtimes, tickets purchases, and clients in a region, with data visualization for all metrics.
             </td>
           </tr>
         </tbody>
