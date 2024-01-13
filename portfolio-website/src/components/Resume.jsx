@@ -10,7 +10,7 @@ function Resume() {
 
   return (
     <div className='resume section' id='resume' ref={resumeRef} style={{ maxWidth: '100%' }}>
-      <h1 style={{ marginLeft: '12vh', fontSize: '2.5vw', marginBottom: '5vh' }}>Past Performance</h1>
+      <h1 style={{ marginLeft: '12vh', fontSize: '200%', marginBottom: '5vh' }}>Past Performance</h1>
       <div style = {{display: 'flex', justifyContent: 'center'}}>
       <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '80%', marginBottom: '100vh' }}>
         <thead style={{ borderBottom: 'none' }}>

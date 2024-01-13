@@ -13,7 +13,7 @@ function Projects() {
 
   return (
     <div className='projects section' id='projects' ref={projectsRef}>
-      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '2.5vw' }}>Tech Portfolio</h1>
+      <h1 style={{ marginLeft: '12vh', marginBottom: '5vh', fontSize: '200%' }}>Tech Portfolio</h1>
       <div style = {{display: 'flex', justifyContent: 'center'}}>
       <Table hover className="text-nowrap" style={{ tableLayout: 'auto', width: '80%', marginBottom: '200vh' }}>
         <thead style={{ borderBottom: 'none' }}>
