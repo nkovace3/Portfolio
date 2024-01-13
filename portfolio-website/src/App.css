@@ -82,16 +82,16 @@ body {
 .projects .table th,
 .projects .table td {
   width: auto;
-  font-size: 75%;
+  font-size: 1.5vh;
 }
 
 
 .resume .table th,
 .resume .table td {
   width: auto;
-  font-size: 75%;
+  font-size: 1.5vh;
 }
 
 .about-me .container {
-  font-size: .9vw;
+  font-size: 1.5vh;
 }

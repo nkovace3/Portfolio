@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import '../App.css';
+import LinkedIn from '../images/LinkedIn.png';
+import Github from '../images/Github.png';
+import Resume from '../images/Resume.jpg';
 
 function Intro() {
   const introRef = useRef(null);
@@ -55,34 +58,26 @@ function Intro() {
     };
   }, []);
 
-  // const scrollToAboutMe = () => {
-  //   const aboutMeSection = document.getElementById('about-me');
-  //   const mainContainer = document.getElementById('main-container');
-
-  //   if (aboutMeSection && mainContainer) {
-  //     const sectionOffsetTop = aboutMeSection.offsetTop;
-  //     const mainContainerOffsetTop = mainContainer.offsetTop;
-
-  //     const offsetRelativeToMainContainer = sectionOffsetTop - mainContainerOffsetTop;
-
-  //     requestAnimationFrame(() => {
-  //       mainContainer.scrollTo({
-  //         top: offsetRelativeToMainContainer,
-  //         behavior: 'smooth',
-  //       });
-  //     });
-  //   }
-  // };
-
   return (
     <div className='intro section' id='intro' ref={introRef}>
-      <h1 style={{ marginBottom: '5vh', marginTop: '15vh', textAlign: 'center', fontSize: '3vw' }}>Welcome to Nikola Kovacevic, Inc. (NIK)</h1>
+      <h1 style={{ marginBottom: '5vh', marginTop: '10vh', textAlign: 'center', fontSize: '3vw' }}>Welcome to Nikola Kovacevic, Inc. (NIK)</h1>
       <div className="price-trend-container" style={{ display: 'flex', justifyContent: 'center', marginLeft: '1em' }}>
         <h1 className='intro-price' style={{ marginRight: '0.5em', textAlign: 'left', fontSize: '3vw' }}>{price}</h1>
-        <h1 className='intro-trend' style={{ textAlign: 'left', marginBottom: '10vh', fontSize: '3vw' }}>{trend}</h1>
+        <h1 className='intro-trend' style={{ textAlign: 'left', marginBottom: '5vh', fontSize: '3vw' }}>{trend}</h1>
+      </div>
+      <div className="d-flex justify-content-center" style={{ marginBottom: '5vh' }}>
+        <a href="https://linkedin.com/in/nikola-kova" target="_blank" rel="noopener noreferrer">
+          <img src={LinkedIn} alt="LinkedIn Logo" style={{ width: '3vh', marginLeft: '1vh', borderBottom: 'none' }} />
+        </a>
+        <a href="https://github.com/nkovace3/" target="_blank" rel="noopener noreferrer">
+          <img src={Github} alt="Github Logo" style={{ width: '3vh', marginLeft: '1vh', borderBottom: 'none' }} />
+        </a>
+        <a href="https://drive.google.com/file/d/1Gzh53I-6Ja2AA6wZmMT2PIAyFm6qUHkE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img src={Resume} alt="Resume Logo" style={{ width: '3vh', marginLeft: '1vh', borderBottom: 'none' }} />
+        </a>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <KeyboardDoubleArrowDownIcon style={{ fontSize: '4em', marginBottom: '100vh' }} />
+      <KeyboardDoubleArrowDownIcon style={{ fontSize: '3em', marginBottom: '100vh' }} />
     </div>
     </div>
   );
