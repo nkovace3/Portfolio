@@ -21,7 +21,7 @@ function AboutMe() {
             </ListGroup.Item>
             <ListGroup.Item style={{ whiteSpace: 'nowrap' }}>
               <div className="list-item-content">
-                <span className="left-text">Year:</span><strong>4</strong>
+                <span className="left-text">Year:</span><strong>5</strong>
               </div>
             </ListGroup.Item>
             <ListGroup.Item style={{ whiteSpace: 'nowrap' }}>
@@ -36,7 +36,7 @@ function AboutMe() {
             </ListGroup.Item>
             <ListGroup.Item style={{ whiteSpace: 'nowrap' }}>
               <div className="list-item-content">
-                <span className="left-text">Seeking:</span><strong>Summer 2024 Internship</strong>
+                <span className="left-text">Seeking:</span><strong>2025 Full-Time Role</strong>
               </div>
             </ListGroup.Item>
           </ListGroup>

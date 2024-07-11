@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import Table from 'react-bootstrap/Table';
 import '../App.css';
 import CombinedInsurance from '../images/CombinedInsurance.png';
-import Algo from '../images/Algo.jpeg';
 import RBC from '../images/RBC.png';
+import Bell from '../images/Bell.png';
 
 function Resume() {
   const resumeRef = useRef(null);
@@ -24,20 +24,24 @@ function Resume() {
         <tbody>
           <tr>
             <td style={{ width: 'auto' }}>
-              Western Algorithmic Trading
-              <img src={Algo} alt="Algo Logo" style={{ width: '2.5vh', marginLeft: '1vh' }} />
+              Bell Canada
+              <img src={Bell} alt="Algo Logo" style={{ width: '2vh', marginLeft: '2vh' }} />
             </td>
-            <td style={{ width: 'auto', textAlign: 'left' }}>Head of Quant Analysis</td>
-            <td style={{ width: 'auto', textAlign: 'left' }}>Sept. 2023 - Present</td>
+            <td style={{ width: 'auto', textAlign: 'left' }}>AI Technical PM Intern</td>
+            <td style={{ width: 'auto', textAlign: 'left' }}>May 2024 - Aug. 2024</td>
             <td style={{ width: 'auto', whiteSpace: 'normal' }}>
               <ul>
                 <li>
-                  Led team to develop closed-end fund data dashboard using MongoDB, Express JS, React JS, and Node JS,
-                  overseeing calculation and presentation of analyses to inform development of closed-end fund arbitrage trading strategy. 
+                  Led development of AI product that provided call centre agents with feedback and reward system while speaking to 
+                  customers in real-time; successful requirements, roadmap, and delegation led to launch for 5000+ agents nationwide.
                 </li>
                 <li>
-                  Ideated and back-tested novel trade strategies by pulling data with SQL and producing advanced Python financial
-                  models, illustrating these findings with Tableau on research publications in form of data-driven investment tools.
+                  Created and managed roadmap to deploy automated reporting tool on usage of Bell’s generative AI chatbot by leading 
+                  team of data scientists and engineers, causing a 50% increase in adoption rate after delivering insights to senior leaders.
+                </li>
+                <li>
+                  Engineered automation tool to create weekly product updates using Python by extracting product progress information with 
+                  Jira API and uploading formatted documents to cloud, saving product managers average of four hours per week.
                 </li>
               </ul>
             </td>
